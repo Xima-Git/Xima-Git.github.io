@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_031d4899c7b24dbe813624e939f95c38 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://rawgit.com/makinacorpus/Leaflet.TextPath/leaflet0.8-dev/leaflet.textpath.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_031d4899c7b24dbe813624e939f95c38" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_031d4899c7b24dbe813624e939f95c38 = L.map(
+                                  'map_031d4899c7b24dbe813624e939f95c38',
+                                  {center: [51.8418276,7.8359921],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_6484ad5a8cd74971bf3ea99bf5c4d4b4 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_031d4899c7b24dbe813624e939f95c38);
+        
+    
+                var poly_line_ae90ba92690d4366a4bf2284252ca9ac = L.polyline(
+                    [[50.8707168, 7.1385457], [69.7216261, 29.8814027]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 1
+}).addTo(map_031d4899c7b24dbe813624e939f95c38);
+            
+    
+                poly_line_ae90ba92690d4366a4bf2284252ca9ac.setText("🚙      🚙", {
+                    repeat: true,
+                    center: false,
+                    below: false,
+                    offset: 8,
+                    orientation: 0,
+                    attributes: {'font-size': '24', 'font-weight': 'bold'}
+                });
+            
+    
+                var poly_line_624fe23807a64c73891ee01e7a5c237a = L.polyline(
+                    [[51.8418276, 7.8359921], [53.5586526, 9.6476383], [55.6713442, 12.5237841], [59.8939529, 10.6450339], [60.3652306, 5.1489925], [67.2916, 14.4125186], [71.170955, 25.7814712]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_031d4899c7b24dbe813624e939f95c38);
+            
+    
+                poly_line_624fe23807a64c73891ee01e7a5c237a.setText("Zum Nordkap", {
+                    repeat: false,
+                    center: false,
+                    below: false,
+                    offset: -5,
+                    orientation: 0,
+                    attributes: None
+                });
+            
+</script>
