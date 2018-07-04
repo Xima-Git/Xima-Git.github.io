@@ -130,6 +130,8 @@
   <script src="/static/components/jquery/dist/jquery.min.js"></script>
   <script src="/static/components/requirejs/require.js"></script>
   <script src="/static/components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
 <!-- Navbar
 ================================================== -->
   <nav id="menubar" class="navbar navbar-default navbar-fixed-top" data-spy="affix">
@@ -3981,6 +3983,27 @@ U.S. government bond is chosen risk-free benchmark, and both bondsare denominate
   </div>
 
 
+	<!--begin gallery body-->
+<div data-nanogallery2='{
+        "itemsBaseURL": "http://nanogallery2.nanostudio.org/samples/",
+        "thumbnailWidth": "200",
+        "thumbnailDisplayTransition": "flipDown",
+        "thumbnailLabel": {
+          "position": "overImageOnMiddle",
+          "titleMultiLine": true,
+          "displayDescription": true,
+          "descriptionMultiLine": true
+        },
+        "allowHTMLinData": true,
+        "thumbnailHoverEffect2": "image_rotateX_0deg_360deg_1000|image_grayscale_0%_100%_1000|label_opacity_0_1_1000",
+        "thumbnailAlignment": "center"
+      }'>
+      <a href="berlin1.jpg" data-ngthumb="berlin1t.jpg" data-ngdesc="bla bla bla hash hash bbab bbal">Berlin 1: Am Tag der Hochzeit meines Bruders mit meiner Tante, schön war es.</a>
+      <a href="berlin2.jpg" data-ngthumb="berlin2t.jpg" data-ngdesc="">Berlin 2</a>
+      <a href="berlin3.jpg" data-ngthumb="berlin3t.jpg" data-ngdesc="">Berlin 3</a>
+
+    </div>
+<!--end gallery body-->
   
     <footer class="footer hidden-print">
       <div class="container">
@@ -4088,29 +4111,5 @@ U.S. government bond is chosen risk-free benchmark, and both bondsare denominate
   <!--NEW RELIC End-->
 	
 </body>
-<body>
-	<!--begin gallery body-->
-<div data-nanogallery2='{
-        "itemsBaseURL": "http://nanogallery2.nanostudio.org/samples/",
-        "thumbnailWidth": "200",
-        "thumbnailDisplayTransition": "flipDown",
-        "thumbnailLabel": {
-          "position": "overImageOnMiddle",
-          "titleMultiLine": true,
-          "displayDescription": true,
-          "descriptionMultiLine": true
-        },
-        "allowHTMLinData": true,
-        "thumbnailHoverEffect2": "image_rotateX_0deg_360deg_1000|image_grayscale_0%_100%_1000|label_opacity_0_1_1000",
-        "thumbnailAlignment": "center"
-      }'>
-      <a href="berlin1.jpg" data-ngthumb="berlin1t.jpg" data-ngdesc="bla bla bla hash hash bbab bbal">Berlin 1: Am Tag der Hochzeit meines Bruders mit meiner Tante, schön war es.</a>
-      <a href="berlin2.jpg" data-ngthumb="berlin2t.jpg" data-ngdesc="">Berlin 2</a>
-      <a href="berlin3.jpg" data-ngthumb="berlin3t.jpg" data-ngdesc="">Berlin 3</a>
 
-    </div>
-<!--end gallery body-->
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
-</body>
 </html>
